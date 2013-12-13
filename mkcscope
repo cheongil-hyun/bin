@@ -1,0 +1,23 @@
+#!/bin/sh
+
+if [ -z "$1" ]; then
+	PATH_TO_FIND=`pwd`
+else
+	PATH_TO_FIND=$*
+fi
+
+echo "PATH_TO_FIND : " $PATH_TO_FIND
+echo "cleaning the previous cscope files"
+rm -f cscope.files cscope.out
+
+echo "making the cscope.files"
+find $PATH_TO_FIND -type f -name '*.[hc]' > cscope.files
+find $PATH_TO_FIND -type f -name '*.cpp' >> cscope.files
+find $PATH_TO_FIND -type f -name '*.cc' >> cscope.files
+find $PATH_TO_FIND -type f -name '*.java' >> cscope.files
+find $PATH_TO_FIND -type f -name '*.[sS]' >> cscope.files
+
+echo "making the cscope.out"
+cscope -b -i cscope.files
+
+
