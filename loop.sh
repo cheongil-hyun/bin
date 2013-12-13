@@ -1,7 +1,8 @@
 #!/bin/sh
+# infinite loop for $@
 
 while [ 1 ]
 do
 	$@
-	sleep 10
+	sleep 3
 done
