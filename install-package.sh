@@ -15,7 +15,7 @@ sudo apt-get install -y curl
 sudo apt-get install -y dosbox
 sudo apt-get install -y xbmc
 sudo apt-get install -y chromium-browser
-#sudo apt-get install -y virtualbox
+sudo apt-get install -y virtualbox
 #sudo add-apt-repository ppa:webupd8team/java
 #sudo apt-get update
 #sudo apt-get install oracle-jdk7-installer
