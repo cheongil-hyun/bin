@@ -3,6 +3,8 @@
 PATH_TO_FIND=`pwd`
 TAGFILE="TAGS"
 OPTS="--extra=+f -a -R -h \".s.S.h.c.cpp.java.py\""
+echo "cleaning the previous TAGS files"
+rm -f TAGS
 
 while getopts o: o
 do
