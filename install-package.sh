@@ -10,6 +10,7 @@ sudo apt-get install -y cscope
 sudo apt-get install -y manpages-dev manpages-posix manpages-posix-dev
 sudo apt-get install -y make automake autoconf
 sudo apt-get install -y sshfs
+sudo apt-get install -y cifs-utils
 sudo apt-get install -y curl
 sudo apt-get install -y chromium-browser
 sudo apt-get install -y virtualbox
