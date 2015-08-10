@@ -12,4 +12,4 @@
 # sudo usermod -a -G fuse cheongilhyun
 # sudo chmod 0660 /dev/fuse
 
-sshfs cheongil.hyun@10.168.178.78: ~/cloud
+sshfs cheongil.hyun@10.168.178.78: ~/mnt/cloud
